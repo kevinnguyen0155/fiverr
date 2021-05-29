@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $color-grey-0;
+    color: $color-grey-0;
+    font-weight: $fw-0;
+    line-height: $lh-0;
+    word-spacing: $ws-0;
+    background-color: $bgcolor-white-0;
+    position: relative;
+}
+
+*:focus {
+    outline: none;
+    border: none;
+}
+
+
+.hoverAndFocus {
+    transition: .2s;
+    &:hover {
+        box-shadow: 0 0 6px 3px blue, 0 0 2px #333 inset;
+    }
+    &:focus-within {
+        box-shadow: 0 0 6px 3px #ffff00, 0 0 2px #333;
+        border: 2px solid black !important;
+        border-radius: 5px !important;
+    }
+}
+
+button{
+    border: none;
+}
+
+@font-face {
+    font-family: "DomaineDisplay";
+    src: url(/fonts/FONTSFREE-NET-DOMAINEDISPLAYBOLD.TTF);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-grey-1;
+    font-weight: $fw-2;
+    margin: 0;
+}
+
+h2 {
+    font-size: $fs-2;   
+    padding-bottom: $pd-2 + 4;
+    margin-bottom: 0;
+}
+
+p{
+    margin: 0;
+}
+
+ul, ol, li{
+    margin: 0;
+    padding: 0;
+}
+
+.content{    
+    padding: 0 $pd-3 + 2;
+    padding-bottom: 96px;
+}
+
+.section{
+    margin-bottom: $mg-4;    
+}
+
+.seeMore{
+    
+    position: absolute;
+    color: $color-blue-0;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+
+//Grid
+
+$num: 1;
+
+@for $num from 1 through 15 {
+    .myCol-#{$num} {
+        width: (100% / 15) * $num;
+    }
+
+    $num: $num + 1;
+}

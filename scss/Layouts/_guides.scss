@@ -1,0 +1,34 @@
+.guides{
+    .guides__content{
+        padding: 0 32px;
+        position: relative;
+        h2{
+            display: inline-block;
+            @extend .hoverAndFocus;
+        }
+        .guides__item{
+            text-decoration: none;
+            padding: 0 16px;
+            @extend .hoverAndFocus;
+            
+            img{
+                width: 100%;
+                border-radius: 4px;
+                margin-bottom: 16px;
+            }
+        }
+        h6{
+            font-size: 18px;
+            padding-bottom: 2px;
+            
+        }
+        p{
+            color: $color-grey-3;
+            letter-spacing: 0.5px;
+        }
+        .seeMore{
+            top: 15px;
+            right: 35px;
+        }
+    }
+}

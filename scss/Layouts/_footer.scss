@@ -1,0 +1,123 @@
+footer {
+    border-top: 1px solid $bgcolor-grey-2;
+    .footer__content {
+        padding: 64px 32px 24px;
+        .row {
+            margin-bottom: 8px;
+            &::after {
+                content: "";
+                margin: 0 16px;
+                height: 1px;
+                width: 100%;
+                background-color: $bgcolor-grey-2;
+            }
+            .myCol-3 {
+                padding: 0 16px;
+                .footer__item {
+                    padding-bottom: 40px;
+                    h6 {
+                        padding-bottom: 20px;
+                        span {
+                            cursor: pointer;
+                            display: block;
+                            @extend .hoverAndFocus;
+                        }
+                    }
+                    ul {
+                        list-style: none;
+                        li:not(:last-child) {
+                            padding-bottom: 16px;
+                        }
+                        li {
+                            a {
+                                color: $color-grey-3;
+                                text-decoration: none;
+                                @extend .hoverAndFocus;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                                p {
+                                    color: $color-grey-5;
+                                    font-size: $fs-3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        .left {
+            display: flex;
+            padding-top: 16px;
+            align-items: center;
+            span {
+                font-size: 28px;
+                font-weight: 800;
+                letter-spacing: -2px;
+                color: $color-grey-2;
+                @extend .hoverAndFocus;
+                i {
+                    font-size: 7px;
+                    padding-left: 2px;
+                }
+            }
+            p {
+                margin-left: 24px;
+                font-size: 14px;
+                color: $color-grey-5;
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            padding-top: 16px;
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    margin-right: 24px;
+                    a {
+                        font-size: 20px;
+                        color: $color-grey-3;
+
+                        &:hover {
+                            padding: 7px 8px;
+                            margin: -8px;
+                            background-color: #efeff0;
+                            border-radius: 50%;
+                        }
+                        @extend .hoverAndFocus;
+                    }
+                }
+            }
+            .setting-buttons {
+                display: flex;
+                button {
+                    font-size: 14px;
+                    color: $color-grey-3;
+                    font-weight: 600;
+                    padding: 8px 12px;
+                    background: none;
+                    border-radius: 54px;
+                    @extend .hoverAndFocus;
+                    i {
+                        margin-right: 8px;
+                    }
+                    &:last-child {
+                        font-size: 32px;
+                        padding: 0;
+                        padding-left: 8px;
+                        border-radius: 0;
+                        i {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

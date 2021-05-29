@@ -1,0 +1,83 @@
+.business {
+    background-color: $bgcolor-blue-0;
+    margin-bottom: 96px;
+    .business__content {
+        padding-top: $pd-4;
+        color: $color-white-0;
+        .row {
+            .myCol-7 {
+                padding-left: 16px;
+                padding-right: 5%;
+                h2{
+                    color: $color-white-0;
+                }
+                .business__head {
+                    display: inline-block;
+                    position: relative;
+                    padding-bottom: $pd-3 + 2;
+                    h3 {
+                        color: $color-white-0;
+                        display: inline;
+                        font-size: $fs-4 + 3;
+                        letter-spacing: $ls-1;
+                        margin-right: 10px;
+                        span {
+                            margin-left: $mg-0 - 5;
+                            font-weight: $fw-4;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                width: 4px;
+                                height: 4px;
+                                border-radius: 50%;
+                                background-color: $bgcolor-white-0;
+                                display: inline-block;
+                                position: absolute;
+                                right: -5px;
+                                bottom: 6px;
+                            }
+                        }
+                    }
+                    .new {
+                        font-size: $fs-3 - 4;
+                        background-color: $bgcolor-blue-2;
+                        padding: 3px 7px 2px;
+                        border: 1px solid transparent;
+                        border-radius: 999px;
+                        font-weight: $fw-2;
+                        position: absolute;
+                        top: -10px;
+                        right: -45px;
+                    }
+                }
+                p {
+                    padding-bottom: $pd-3 + 2;
+                    max-width: 450px;
+                    font-size: $fs-0 + 2;
+                }
+                ul {
+                    list-style: none;
+                    margin-bottom: 48px;
+                    li {
+                        display: flex;
+                        padding-bottom: $pd-1 + 2;
+                        i {
+                            font-size: $fs-4;
+                            color: $color-grey-2;
+                            margin-right: 12px;
+                        }
+                    }
+                }
+                a {
+                    @extend .button--green;
+                }
+            }
+            .myCol-8 {
+                img {
+                    width: 686px;
+                    height: 438px;
+                }
+            }
+        }
+    }
+}

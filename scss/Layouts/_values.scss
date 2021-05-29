@@ -1,0 +1,36 @@
+.values {
+    background-color: $bgcolor-grey-0;
+    margin-bottom: $mg-4;
+    .values__content {
+        width: 93%;
+        margin: 0 auto;
+        padding: 96px 0;
+        .myCol-7 {
+            padding-right: 11%;
+            padding-left: $pd-2 - 4;
+            ul {
+                list-style: none;
+                li {
+                    padding-bottom: 24px;
+                    font-size: $fs-0 + 2;
+                    h6 {
+                        display: flex;
+                        font-size: $fs-0 + 2;
+                        i {
+                            color: $color-grey-2;
+                            font-size: $fs-4 - 2;
+                            margin-right: $mg-0;
+                        }
+                    }
+                }
+            }
+        }
+        .myCol-8 {
+            .modal {
+                .modal-dialog {
+                    max-width: 900px; 
+                }
+            }
+        }
+    }
+}

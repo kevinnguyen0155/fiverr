@@ -1,0 +1,18 @@
+.button--green {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: $bgcolor-green-2;
+    color: $color-white-0;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.button--blue {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: $color-white-0;
+    font-weight: $fw-3;
+    color: $color-blue-0;
+    border-radius: 4px;
+    display: inline-block;
+}

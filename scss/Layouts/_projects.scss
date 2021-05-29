@@ -1,0 +1,59 @@
+.projects {
+    position: relative;
+    padding-top: 96px;
+    background-color: #f5f5f5;
+    .project__content {
+        .projects__carousel {
+            .item {
+                padding: 5px 2px;
+                .projects__card {
+                    border-radius: 4px;
+                    overflow: hidden;
+                    box-shadow: 0 0.14px 2.29266px rgba(0, 0, 0, 0.03), 0 0.37px 4.42626px rgba(0, 0, 0, 0.05),
+                        0 3px 7px rgba(0, 0, 0, 0.09);
+                    &:hover{
+                        box-shadow: none;
+                    }
+                    img {
+                        height: 237px;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 4px 4px 0 0;
+                        &:hover {
+                            opacity: 0.85;
+                        }
+                    }
+                    .project__info {
+                        background-color: $color-white-0;
+                        display: flex;
+                        padding: 16px 0 12px 16px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                        .gig-info {
+                            padding-left: 12px;
+                            font-size: 14px;
+                            b {
+                                display: block;
+                                a {
+                                    color: $color-grey-1;
+                                    text-decoration: none;
+                                }
+                            }
+                            a {
+                                color: $color-grey-4;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .seeMore{
+        top: 100px;
+        right: 35px;
+    }
+}

@@ -1,0 +1,25 @@
+@mixin logo ($text-color, $dot-color){
+    height: 28px;
+    width: 120px;                
+    a {
+        color: $text-color;
+        text-decoration: none;
+        line-height: $lh-0;
+        font-size: $fs-2;
+        font-weight: $fw-1;
+        letter-spacing: $ls-0;
+        position: relative;
+        bottom: 11px;
+        &::after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: $br-1;
+            background-color: $dot-color;
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            right: -10px;
+        }
+    }
+}

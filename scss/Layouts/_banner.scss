@@ -1,0 +1,38 @@
+.banner{
+    padding: 0 32px;
+    .banner__content{
+        padding: 120px 96px;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        picture{
+            display: block;
+            img{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .text{
+            z-index: 1;
+            h2{
+                font-size: 48px;
+                color: $color-white-0;
+                max-width: 650px;
+                padding-bottom: 40px;
+                @extend .hoverAndFocus;
+                span{
+                    font-family: "DomaineDisplay";
+                    font-style: italic;
+                }
+            }
+            a{
+                @extend .button--green;
+                @extend .hoverAndFocus;
+            }
+        }
+    }
+}

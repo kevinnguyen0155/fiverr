@@ -1,0 +1,21 @@
+.partners{
+    margin-bottom: 96px;
+    .partners__content{
+
+        span{
+            padding-right: $pd-3 + 2;
+            color: $color-grey-5;
+        }
+        ul{
+            padding: 0 $pd-2 + 4;
+            margin-bottom: 0;
+            height: 95px;
+            justify-content: center;
+            align-items: center;
+            li{
+                padding-right: $pd-3 * 2;
+               list-style: none; 
+            }
+        }
+    }    
+}

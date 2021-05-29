@@ -1,0 +1,50 @@
+.services {
+    .services__content {
+        width: 95%;
+        margin: 0 auto 96px;
+        
+        .services__slider {
+            .owl-carousel {
+                .item {
+                    height: 345px;
+                    .subCategory {
+                        text-decoration: none;
+                        position: relative;
+                        display: block;
+                        .subCategory__content {
+                            position: relative;
+                            h4 {
+                                color: $color-white-0;
+                                font-size: $fs-4;
+                                font-weight: $fw-2;
+                                padding: $pd-2 + 4;
+                                position: relative;
+                                z-index: 1;
+                                width: 100%;
+                                small {
+                                    display: block;
+                                    font-size: $fs-3;
+                                }
+                            }
+                            picture {
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 345px;
+                                    border-radius: 4px;
+                                    object-fit: cover;
+                                    &:hover {
+                                        opacity: 0.85;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

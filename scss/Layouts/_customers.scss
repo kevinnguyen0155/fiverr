@@ -1,0 +1,59 @@
+.customers {
+    margin-bottom: $mg-4;
+    .customers__content {
+        width: 95%;
+        margin: 0 auto;
+        .item {
+            .row {
+                align-items: center;
+                button{
+                    border: none;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        display: inline-block;
+                        background: url(../../img/desktop-play-button.c1196d6.png);
+                        width: 80px;
+                        height: 80px;
+                        background-size: 80px;
+                        @extend .alignCenter;
+                    }
+                }
+                .video {
+                    width: 40%;
+                }
+                .text{
+                    width: 60%;
+                    padding: 0 48px 0 64px;
+                    h5{
+                        color: $color-grey-3;
+                        padding-bottom: $pd-2 - 4;
+                        font-weight: $fw-0;
+                        span{
+                            margin-left: $mg-1 - 4;
+                            border-left: 1px solid $bgcolor-grey-1;
+                            img{
+                                height: 36px;
+                                width: auto;
+                                display: inline-block;
+                                margin-left: $mg-0 + 2;
+                            }
+                        }
+                    }
+                    blockquote{
+                        font-size: $fs-2 - 2;
+                        color: $color-green-0;
+                        font-style: italic;
+                        font-family: "DomaineDisplay";
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .video__content {
+            .modal-dialog {
+                max-width: 900px;
+            }
+        }
+    }
+}

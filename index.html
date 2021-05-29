@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr</title>
+
+
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- BS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header__content">
+            <div class="row">
+                <div class="col-2 header__right">
+                    <div class="logo hoverAndFocus" tabindex="">
+                        <a href="#">
+                            fiverr
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 header__left text-right">
+                    <ul>
+                        <li class="hoverAndFocus"><a href="#">Fiver Business</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#"><i class="fa fa-globe"></i> English</a></li>
+                        <li><a href="#">$USD</a></li>
+                        <li><a href="#" class="hoverAndFocus">Become a Seller</a></li>
+                        <li><a href="#" class="hoverAndFocus">Sign In</a></li>
+                        <button class="hoverAndFocus">Join</button>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- STICKY HEADER -->
+    <header class="stickyHeader" id="stickyHeader">
+        <div class="navBar">
+            <div class="row mx-0">
+                <div class="logo hoverAndFocus" tabindex="">
+                    <a href="#">
+                        fiverr
+                    </a>
+                </div>
+                <div class="searchBox">
+                    <form>
+                        <i class="fa fa-search"></i>
+                        <input class="hoverAndFocus" type="text" placeholder="Find Services">
+                        <button class="button--green hoverAndFocus">Search</button>
+                    </form>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a class="hoverAndFocus" href="">Fiverr Business</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li>
+                            <div class="settings">
+                                <a href=""><i class="fa fa-globe"></i>English</a>
+                                <a href="">$USD</a>
+                            </div>
+                        </li>
+                        <li><a href="" class="hoverAndFocus">Become a Seller</a></li>
+                        <li><a href="" class="hoverAndFocus">Sign In</a></li>
+                        <li><a class="join hoverAndFocus" href="">Join</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="categories" id="categories">
+            <ul>
+                <li><a href="">Graphics & Design</a></li>
+                <li><a href="">Digital Marketing</a></li>
+                <li><a href="">Writing & Translation</a></li>
+                <li><a href="">Video & Animation</a></li>
+                <li><a href="">Music & Audio</a></li>
+                <li><a href="">Programming & Tech</a></li>
+                <li><a href="">Data
+                    <span>new</span>
+                </a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Lifestyle</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="webCarousel">
+        <div class="carousel__content">
+            <div class="title hoverAndFocus" tabindex="0">
+                <h1>
+                    Find the perfect <span>freelance</span>
+                </h1>
+                <h1>
+                    services for your business
+                </h1>
+            </div>
+            <div class="searchBar">
+                <form class="row mx-0">
+                    <div class="col-10 input d-flex align-items-center hoverAndFocus">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Try &quot;building mobile app&quot;">
+                    </div>
+                    <div class="col-2 button hoverAndFocus">
+                        <button class="btn" onclick="autoPlay()">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="popular d-flex align-items-baseline">
+                <span>Popular:</span>
+                <ul>
+                    <li><a class="hoverAndFocus focus-yellow" href="#">Web and Mobile Design</a></li>
+                    <li><a class="hoverAndFocus focus-yellow" href="#">WordPress</a></li>
+                    <li><a class="hoverAndFocus focus-yellow" href="#">Logo Design</a></li>
+                    <li><a class="hoverAndFocus focus-yellow" href="#">Dropshipping</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide myCarousel carousel-fade" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active"></div>
+                <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+
+            <button class="autoPlayBtn" id="autoPlayBtn">
+                play
+            </button>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="partners">
+        <div class="partners__content container d-flex align-items-center justify-content-center">
+            <span>Trusted by:</span>
+            <ul class="d-flex">
+                <li>
+                    <picture>
+                        <img src="./img/facebook.543cf10.png" alt="facebook">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <img src="./img/google.517da091.png" alt="google">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <img src="./img/netflix.e3ad953.png" alt="netflix">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <img src="./img/pandg.8b7310b.png" alt="pandg">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <img src="./img/paypal.ec56157.png" alt="paypal">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="services__content">
+            <h2 class="hoverAndFocus" tabindex="0">
+                Popular professional services
+            </h2>
+            <div class="services__slider">
+                <div class="owl-carousel owl-theme services__carousel">
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Build your brand</small>
+                                    Logo Design
+                                </h4>
+                                <picture>
+                                    <img src="./img/logo-design-2x.png" alt="logo-design-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Customize your site</small>
+                                    WordPress
+                                </h4>
+                                <picture>
+                                    <img src="./img/wordpress-2x.png" alt="wordpress-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Share your message</small>
+                                    Voice Over
+                                </h4>
+                                <picture>
+                                    <img src="./img/voiceover-2x.png" alt="voiceover-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Engage your audience</small>
+                                    Video Explainer
+                                </h4>
+                                <picture>
+                                    <img src="./img/animated-explainer-2x.png" alt="animated-explainer-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Reach more customers</small>
+                                    Social Media
+                                </h4>
+                                <picture>
+                                    <img src="./img/social-2x.png" alt="social-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Unlock growth online</small>
+                                    SEO
+                                </h4>
+                                <picture>
+                                    <img src="./img/seo-2x.png" alt="seo-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Color your dreams</small>
+                                    Illustration
+                                </h4>
+                                <picture>
+                                    <img src="./img/illustration-2x.png" alt="illustration-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Go global</small>
+                                    Translation
+                                </h4>
+                                <picture>
+                                    <img src="./img/translation-2x.png" alt="translation-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Learn your business</small>
+                                    Data Entry
+                                </h4>
+                                <picture>
+                                    <img src="./img/google.517da09.png" alt="google">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="subCategory hoverAndFocus">
+                            <div class="subCategory__content">
+                                <h4>
+                                    <small>Showcase your story</small>
+                                    Book Covers
+                                </h4>
+                                <picture>
+                                    <img src="./img/book-covers-2x.png" alt="book-covers-2x">
+                                </picture>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values">
+        <div class="values__content">
+            <div class="row">
+                <div class="myCol-7">
+                    <h2 class="hoverAndFocus">A whole world of freelance talent at your fingertips</h2>
+                    <ul>
+                        <li>
+                            <h6 class="hoverAndFocus">
+                                <i class="far fa-check-circle"></i>
+                                The best for every budget
+                            </h6>
+                            <p>Find high-quality services at every price point. No hourly rates, just project-based
+                                pricing.</p>
+                        </li>
+                        <li>
+                            <h6 class="hoverAndFocus">
+                                <i class="far fa-check-circle"></i>
+                                Quality work done quickly
+                            </h6>
+                            <p>Find the right freelancer to begin working on your project within minutes.</p>
+                        </li>
+                        <li>
+                            <h6 class="hoverAndFocus">
+                                <i class="far fa-check-circle"></i>
+                                Protected payments, every time
+                            </h6>
+                            <p>Always know what you'll pay upfront. Your payment isn't released until you approve the
+                                work.</p>
+                        </li>
+
+                        <h6 class="hoverAndFocus">
+                            <i class="far fa-check-circle"></i>
+                            24/7 support
+                        </h6>
+                        <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+
+                    </ul>
+                </div>
+                <div class="myCol-8">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="hoverAndFocus" data-toggle="modal" data-target="#exampleModal">
+                        <img src="./img/selling-proposition-still-1400-x.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <video controls="true" src="./img/vmvv3czyk2ifedefkau7.mp4"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORE -->
+    <section class="explore">
+        <div class="explore__content content">
+            <h2>Explore the marketplace</h2>
+            <ul>
+                <li><a class="hoverAndFocus" href="#">
+                        <img src="./img/graphics-design.d32a2f8.svg" alt="">
+                        Graphics & Design
+                    </a></li>
+                <li><a class="hoverAndFocus" href="#">
+                        <img src="./img/online-marketing.74e221b.svg" alt="">
+                        Digital Marketing
+                    </a></li>
+                <li><a class="hoverAndFocus" href="#">
+                        <img src="./img/writing-translation.32ebe2e.svg" alt="">
+                        Writing & Translation
+                    </a></li>
+                <li><a class="hoverAndFocus" href="#">
+                        <img src="./img/video-animation.f0d9d71.svg" alt="">
+                        Video & Animation
+                    </a></li>
+                <li><a class="hoverAndFocus" href="#">
+                        <img src="./img/music-audio.320af20.svg" alt="">
+                        Music & Audio
+                    </a></li>
+                <li><a class="hoverAndFocus" href="#">
+                        <img src="./img/programming.9362366.svg" alt="">
+                        Programming & Tech
+                    </a></li>
+                <li><a class="hoverAndFocus" href="#">
+                        <img src="./img/business.bbdf319.svg" alt="">
+                        Business
+                    </a></li>
+                <li><a class="hoverAndFocus" href="#">
+                        <img src="./img/lifestyle.745b575.svg" alt="">
+                        Lifestyle
+                    </a></li>
+                <li><a class="hoverAndFocus" href="#"><img src="./img/data.718910f.svg" alt="">
+                        Data</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- BUSINESS -->
+    <section class="business">
+        <div class="business__content content">
+            <div class="row">
+                <div class="myCol-7">
+                    <div class="business__head">
+                        <h3 class="business__logo">fiverr<span>business</span></h3>
+                        <span class="new">NEW</span>
+                    </div>
+                    <h2 class="hoverAndFocus" tabindex="0">A business solution designed for <span>teams</span></h2>
+                    <p>Upgrade to a curated experience packed with tools and benefits, dedicated to businesses</p>
+                    <ul>
+                        <li><i class="far fa-check-circle"></i>Connect to freelancers with proven business experience
+                        </li>
+                        <li><i class="far fa-check-circle"></i>Get matched with the perfect talent by a customer success
+                            manager</li>
+                        <li><i class="far fa-check-circle"></i>Manage teamwork and boost productivity with one powerful
+                            workspace</li>
+                    </ul>
+                    <a href="#" class="hoverAndFocus">Explore Fiverr Business</a>
+                </div>
+                <div class="myCol-8">
+                    <img src="./img/business-desktop-870-x1.png" alt="business-desktop-870-x1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMERS -->
+    <section class="customers">
+        <div class="customers__content">
+            <div class="owl-carousel owl-theme customers__carousel">
+                <div class="item">
+                    <div class="row">
+                        <div class="video">
+                            <button type="button" class="hoverAndFocus" style="width: 100%;" data-toggle="modal"
+                                data-target="#lavender"><img src="./img/testimonial-video-still-lavender.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="text">
+                            <h5 class="hoverAndFocus">Brighid Gannon (DNP, PMHNP-BC), Co-Founder<span><img
+                                        src="./img/lavender-logo-x2.89c5e2e.png" alt="lavender-logo-x2"></span></h5>
+                            <blockquote>
+                                "We used Fiverr for SEO, our logo, website, copy, animated videos — literally
+                                everything. It was like working with a human right next to you versus being across the
+                                world."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="video">
+                            <button type="button" class="hoverAndFocus" style="width: 100%;" data-toggle="modal"
+                                data-target="#rooted"><img src="./img/testimonial-video-still-rooted.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="text">
+                            <h5 class="hoverAndFocus">Kay Kim, Co-Founder<span><img
+                                        src="./img/rooted-logo-x2.321d79d.png" alt="rooted-logo-x2"></span></h5>
+                            <blockquote>
+                                "It's extremely exciting that Fiverr has freelancers from all over the world — it
+                                broadens the talent pool. One of the best things about Fiverr is that while we're
+                                sleeping, someone's working."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="video">
+                            <button type="button" class="hoverAndFocus" style="width: 100%;" data-toggle="modal"
+                                data-target="#haerfest"><img src="./img/testimonial-video-still-haerfest.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="text">
+                            <h5 class="hoverAndFocus">Tim and Dan Joo, Co-Founders<span><img
+                                        src="./img/haerfest-logo-x2.03fa5c5.png" alt="haerfest-logo-x2"></span></h5>
+                            <blockquote>
+                                "When you want to create a business bigger than yourself, you need a lot of help. That's
+                                what Fiverr does."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="video">
+                            <button type="button" class="hoverAndFocus" style="width: 100%;" data-toggle="modal"
+                                data-target="#naadam"><img src="./img/testimonial-video-still-naadam.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="text">
+                            <h5 class="hoverAndFocus">Caitlin Tormey, Chief Commercial Officer<span><img
+                                        src="./img/naadam-logo-x2.0a3b198.png" alt="naadam-logo-x2"></span></h5>
+                            <blockquote>
+                                "We've used Fiverr for Shopify web development, graphic design, and backend web
+                                development. Working with Fiverr makes my job a little easier every day."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video__content">
+                <div class="modal hide fade" id="lavender" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <video controls="true" src="./img/rb8jtakrisiz0xtsffwi.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal hide fade" id="rooted" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <video controls="true" src="./img/yja2ld5fnolhsixj3xxw.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal hide fade" id="haerfest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <video controls="true" src="./img/bsncmkwya3nectkensun.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal hide fade" id="naadam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <video controls="true" src="./img/plfa6gdjihpdvr10rchl.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LOGO MAKER -->
+    <section class="logoMaker section">
+        <div class="logoMaker__content">
+            <div class="description">
+                <div class="description__head">
+                    <h3 class="logoMaker__logo">fiverr<span>logo maker</span></h3>
+                    <span class="beta">BETA</span>
+                </div>
+                <h2 class="hoverAndFocus" tabindex="0">Make an incredible logo
+                    <br> <span>in minutes</span>
+                </h2>
+                <p>Make an incredible logo</p>
+                <a href="#" class="hoverAndFocus">Try Fiverr Logo Maker</a>
+            </div>
+            <picture>
+                <img src="./img/logo-maker-banner-wide-desktop-1.png" alt="">
+            </picture>
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section">
+        <div class="project__content content">
+            <h2 class="hoverAndFocus" tabindex="0">
+                Get inspired with projects made by our freelancers
+            </h2>
+            <div class="owl-carousel owl-theme projects__carousel">
+                <div class="item ">
+                    <div class="projects__card hoverAndFocus">
+                        <div class="hoverAndFocus">
+                            <a href="#">
+                                <picture>
+                                    <img src="./img/passionshake.jpeg" alt="passionshake">
+                                </picture>
+                            </a>
+                            <div class="project__info">
+                                <a href="#" class="profile-pic hoverAndFocus">
+                                    <img src="./img/74e5ab33-a5fc-40ae-9cee-a91b23e80237.jpg" alt="">
+                                </a>
+                                <div class="gig-info">
+                                    <b><a class="hoverAndFocus" href="#">Product Photography</a>
+                                    </b>
+                                    <a class="hoverAndFocus" href="">by passionshake</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="projects__card hoverAndFocus">
+                        <div class="hoverAndFocus">
+                            <a href="#">
+                                <picture>
+                                    <img src="./img/christophbrandl.jpg" alt="christophbrandl">
+                                </picture>
+                            </a>
+                            <div class="project__info">
+                                <a href="#" class="profile-pic hoverAndFocus">
+                                    <img src="./img/6b4a9867-ad06-415f-b307-11177ae30fdd.png" alt="">
+                                </a>
+                                <div class="gig-info">
+                                    <b><a class="hoverAndFocus" href="#">Illustration</a>
+                                    </b>
+                                    <a class="hoverAndFocus" href="">by christophbrandl</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="projects__card hoverAndFocus">
+                        <div class="hoverAndFocus">
+                            <a href="#">
+                                <picture>
+                                    <img src="./img/lamonastudio-img.jpg" alt="lamonastudio-img">
+                                </picture>
+                            </a>
+                            <div class="project__info">
+                                <a href="#" class="profile-pic hoverAndFocus">
+                                    <img src="./img/5a706f4e-9f73-4ebc-97ff-9d2ef16bf28c.png" alt="">
+                                </a>
+                                <div class="gig-info">
+                                    <b><a class="hoverAndFocus" href="#">Animated GIFs</a>
+                                    </b>
+                                    <a class="hoverAndFocus" href="">by lamonastudio</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="projects__card hoverAndFocus">
+                        <div class="hoverAndFocus">
+                            <a href="#">
+                                <picture>
+                                    <img src="./img/annapietrangeli.jpeg" alt="annapietrangeli">
+                                </picture>
+                            </a>
+                            <div class="project__info">
+                                <a href="#" class="profile-pic hoverAndFocus">
+                                    <img src="./img/1d531e54-7607-4bdb-815f-088dbc0fb971.jpg" alt="">
+                                </a>
+                                <div class="gig-info">
+                                    <b><a class="hoverAndFocus" href="#">Book Design</a>
+                                    </b>
+                                    <a class="hoverAndFocus" href="">by annapietrangeli</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="projects__card hoverAndFocus">
+                        <div class="hoverAndFocus">
+                            <a href="#">
+                                <picture>
+                                    <img src="./img/bruno_malagrino.jpg" alt="bruno_malagrino">
+                                </picture>
+                            </a>
+                            <div class="project__info">
+                                <a href="#" class="profile-pic hoverAndFocus">
+                                    <img src="./img/AF1BF970-07CA-454B-8AF1-2F3E06838C8B.jpg" alt="">
+                                </a>
+                                <div class="gig-info">
+                                    <b><a class="hoverAndFocus" href="#">Logo Design</a>
+                                    </b>
+                                    <a class="hoverAndFocus" href="">by bruno_malagrino</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="projects__card hoverAndFocus">
+                        <div class="hoverAndFocus">
+                            <a href="#">
+                                <picture>
+                                    <img src="./img/spickex.jpeg" alt="spickex">
+                                </picture>
+                            </a>
+                            <div class="project__info">
+                                <a href="#" class="profile-pic hoverAndFocus">
+                                    <img src="./img/fiverr_profile.jpg" alt="">
+                                </a>
+                                <div class="gig-info">
+                                    <b><a class="hoverAndFocus" href="#">Portraits & Caricatures</a>
+                                    </b>
+                                    <a class="hoverAndFocus" href="">by spickex</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="projects__card hoverAndFocus">
+                        <div class="hoverAndFocus">
+                            <a href="#">
+                                <picture>
+                                    <img src="./img/skydesigner.png" alt="skydesigner">
+                                </picture>
+                            </a>
+                            <div class="project__info">
+                                <a href="#" class="profile-pic hoverAndFocus">
+                                    <img src="./img/2bb8af3c-4cce-42a8-a699-f11177524084.png" alt="">
+                                </a>
+                                <div class="gig-info">
+                                    <b><a class="hoverAndFocus" href="#">Web & Mobile Design</a>
+                                    </b>
+                                    <a class="hoverAndFocus" href="">by skydesigner</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="projects__card hoverAndFocus">
+                        <div class="hoverAndFocus">
+                            <a href="#">
+                                <picture>
+                                    <img src="./img/fernandobengua.jpg" alt="fernandobengua">
+                                </picture>
+                            </a>
+                            <div class="project__info">
+                                <a href="#" class="profile-pic hoverAndFocus">
+                                    <img src="./img/db111eb4-c119-42b4-9a1d-9116601f3d22.jpg" alt="">
+                                </a>
+                                <div class="gig-info">
+                                    <b><a class="hoverAndFocus" href="#">Social Media Design</a>
+                                    </b>
+                                    <a class="hoverAndFocus" href="">by fernandobengua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="seeMore" href="#">See More Projects ></a>
+    </section>
+
+    <!-- GUIDES -->
+    <section class="guides section">
+        <div class="guides__content">
+            <h2>Fiverr guides</h2>
+            <div class="row">
+                <a href="#" class="col-4 guides__item">
+                    <picture>
+                        <img src="./img/guide-start-online-business-552-x2.png"
+                            alt="guide-start-online-business-552-x2">
+                    </picture>
+                    <h6>Start an online business and work from home</h6>
+                    <p>A complete guide to starting a small business online</p>
+                </a>
+                <a href="#" class="col-4 guides__item">
+                    <picture>
+                        <img src="./img/guide-digital-marketing-552-x2.png" alt="guide-digital-marketing-552-x2">
+                    </picture>
+                    <h6>Digital marketing made easy</h6>
+                    <p>A practical guide to understand what is digital marketing</p>
+                </a>
+                <a href="#" class="col-4 guides__item">
+                    <picture>
+                        <img src="./img/guide-create-a-logo-552-x2.png" alt="guide-create-a-logo-552-x2">
+                    </picture>
+                    <h6>Create a logo for your business</h6>
+                    <p>A step-by-step guide to create a memorable business logo</p>
+                </a>
+            </div>
+            <a href="#" class="seeMore">See More Guides ></a>
+        </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner__content">
+            <picture>
+                <img src="./img/bg-signup-1400-x1.png" alt="bg-signup-1400-x1">
+            </picture>
+            <div class="text">
+                <h2 tabindex="0">Find the <span>talent</span> needed to get your business <span>growing</span></h2>
+                <a href="#">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__content">
+            <div class="row">
+                <div class="myCol-3">
+                    <div class="footer__item">
+                        <h6>
+                            <span tabindex="0">Categories</span>
+                        </h6>
+                        <ul>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="myCol-3">
+                    <div class="footer__item">
+                        <h6>About</h6>
+                        <ul>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="myCol-3">
+                    <div class="footer__item">
+                        <h6>Support</h6>
+                        <ul>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="myCol-3">
+                    <div class="footer__item">
+                        <h6>Community</h6>
+                        <ul>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.
+                                    <p> Lorem, ipsum. </p>
+                                </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="myCol-3">
+                    <div class="footer__item">
+                        <h6>More from Fiverr</h6>
+                        <ul>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.</a></li>
+                            <li><a href="">Lorem, ipsum.
+                                    <p>Lorem, ipsum.</p>
+                                </a></li>
+                            <li><a href="">Lorem, ipsum.
+                                    <p>Lorem, ipsum.</p>
+                                </a></li>
+                            <li><a href="">Lorem, ipsum.
+                                    <p>Lorem, ipsum.</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="left">
+                    <span>fiverr<i class="far fa-registered"></i></span>
+                    <p>© Fiverr International Ltd. 2021</p>
+                </div>
+                <div class="right">
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <div class="setting-buttons">
+                        <button><i class="fa fa-globe"></i>English</button>
+                        <button>$USD</button>
+                        <button><i class="fas fa-universal-access"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JQUERY JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+
+    <!-- BS JS     -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- OWL CAROUSEL JS-->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
